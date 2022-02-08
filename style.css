@@ -1,0 +1,81 @@
+body
+{
+background-color: 	#DCDCDC;
+font-family: Verdana;
+font-size: 30px;
+color: white;
+}
+#container
+{
+	padding-top: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom:50px;
+	background-color: #D3D3D3;
+	margin: auto;
+    width: 1000px;
+}
+#aktualnaData
+{
+	color: 	#000000;
+	text-align: center;
+    	border: 5px solid #808080;
+	background-color: #B0C4DE;
+}
+#dniDoWydarzenia
+{
+	color: 	#000000;
+	text-align: center;
+    	border: 5px solid #808080;
+	background-color: #B0C4DE;
+}
+#doWydarzenia
+{
+	color: 	#000000;
+	text-align: center;
+    	border: 5px solid #808080;
+	background-color: #B0C4DE;
+}
+
+#dataWydarzenia
+{
+	  color: #000000;
+	  text-align: center;
+   	  border: 5px solid #808080;
+	  background-color: #B0C4DE;
+}
+
+#description
+{
+	text-align: center;
+	border: 5px solid #808080;
+}
+
+#footer
+{
+	color: 	#000000;
+	margin-top: 50px;
+	padding: 10px;
+	font-size: 20px;
+	text-align: center;
+    	border: 5px solid #808080;
+	background-color: #B0C4DE;
+	letter-spacing: 3px;
+}
+h1
+{
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+#topBar
+{
+	
+	color: #000000;
+	padding: 10px;
+	font-size: 40px;
+    	border: 10px solid #808080;
+	letter-spacing: 3px;
+	margin-bottom: 50px;
+	background-color: #B0C4DE;
+}

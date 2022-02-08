@@ -1,0 +1,89 @@
+
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Odliczanie dni do wydarzenia </title>
+	
+	<script type="text/javascript" >
+function odliczanie()
+	{
+		var dzisiaj = new Date();
+		
+		var dzien = dzisiaj.getDate();
+		if(dzien<10) dzien= "0"+ dzien;
+        var godzina = dzisiaj.getHours();
+		if(godzina<10) godzina= "0"+ godzina;
+        var minuta = dzisiaj.getMinutes();
+		if(minuta<10) minuta= "0"+ minuta;
+        var sekunda = dzisiaj.getSeconds();
+		if(sekunda<10) sekunda= "0"+ sekunda;
+		var miesiac = dzisiaj.getMonth()+1;
+		if(miesiac<10) miesiac= "0"+ miesiac;
+		var rok = dzisiaj.getFullYear();
+		if(rok<10) rok= "0"+ rok;
+		var milisekundy = dzisiaj.getTime();
+		
+		
+		var end = new Date("06/24/2022");
+		var endDzien = end.getDate();
+		var endMiesiac = end.getMonth()+1;
+		var endRok = end.getFullYear();
+		var milisekundy2 = end.getTime();
+        var endgodzina = end.getHours();
+		
+		
+		var pozostalo = milisekundy2 - milisekundy; 
+		var dni = Math.floor(pozostalo/86400000); 
+        
+		
+	
+		
+		document.getElementById("aktualnaData").innerHTML = "Aktualna data i godzina   "+dzien+"/"+miesiac+"/"+rok+" | "+godzina+":"+minuta+":"+sekunda; 
+
+		document.getElementById("dataWydarzenia").innerHTML = " Początek wakacji     "+endDzien+"/"+endMiesiac+"/"+endRok;
+
+		document.getElementById("dniDoWydarzenia").innerHTML ="Do rozpoczęcia wakacji   "+ dni+" dni";
+
+        
+
+        setTimeout("odliczanie()",1000);
+		 
+	}
+	</script>
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+</head>
+<body>
+
+<div id="container">
+<div id="topBar">
+<img src="gif2.gif"  align= "right"  width = "75" height="75" />
+<img src="gif2.gif"  align= "left"  width = "75" height="75" />
+<center>
+<h1>Odliczanie</h1>
+</center>
+
+</div>
+	
+	<div id="aktualnaData">...</div> 
+
+	<br/>
+	
+	<div id="dataWydarzenia">...</div>
+<br/>
+<br/>	
+	
+	<div id="dniDoWydarzenia">...</div> 
+	
+	<script type="text/javascript" >
+	odliczanie();
+</script>
+<div id="footer">
+Szymon Serafin 2C
+
+</div>
+</div>
+</body>
+</html>
